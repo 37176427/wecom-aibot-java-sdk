@@ -18,7 +18,7 @@ mvn install
 
 ```xml
 <dependency>
-  <groupId>io.github.user37176427</groupId>
+  <groupId>io.github.moment</groupId>
   <artifactId>wecom-aibot-java-sdk</artifactId>
   <version>1.0.0</version>
 </dependency>
@@ -29,7 +29,7 @@ mvn install
 ## 快速开始
 
 ```java
-import io.github.user37176427.wecom.aibot.*;
+import io.github.moment.wecom.aibot.*;
 
 var client = new WecomAiBotClient(
     ClientOptions.builder(System.getenv("WECOM_BOT_ID"),
@@ -54,7 +54,7 @@ client.sendMarkdown("userid_or_chatid", "**定时通知**").join();
 client.close();
 ```
 
-实际服务应长期保存 client，在关闭钩子释放，不要在每次消息处理时创建连接。完整可运行入口 [BasicBot.java](src/test/java/io/github/user37176427/wecom/aibot/examples/BasicBot.java) 使用环境变量；Maven 会编译示例，但不会执行或发送真实消息。
+实际服务应长期保存 client，在关闭钩子释放，不要在每次消息处理时创建连接。完整可运行入口 [BasicBot.java](src/test/java/io/github/moment/wecom/aibot/examples/BasicBot.java) 使用环境变量；Maven 会编译示例，但不会执行或发送真实消息。
 
 ## 生命周期与并发契约
 
@@ -144,7 +144,7 @@ client.downloader().download(java.net.URI.create(content.url()), content.aesKey(
 
 下载默认并发 4、10 秒总时限、50 MiB 响应上限，可调。超时/close 会取消底层 HTTP 请求及迟到的响应体订阅；取消返回的 Future 仅放弃等待，容量仍在请求终结后回收。无 aesKey 时返回原始文件；有 key 时使用 AES-256-CBC、key 前 16 字节 IV 和 32 字节 PKCS#7 填充校验。文件名仅是未信任的响应元数据；SDK 不写文件，也不将其直接拼成路径。下载 URL 应来自已验证的企微回调，不要开放成任意用户 URL 代理。
 
-五类卡片和媒体的可编译示例见 [MediaAndCards.java](src/test/java/io/github/user37176427/wecom/aibot/examples/MediaAndCards.java)。卡片 builder 覆盖官方全部子字段；类型特有必填项和最终合法性由企微服务端校验。
+五类卡片和媒体的可编译示例见 [MediaAndCards.java](src/test/java/io/github/moment/wecom/aibot/examples/MediaAndCards.java)。卡片 builder 覆盖官方全部子字段；类型特有必填项和最终合法性由企微服务端校验。
 
 ## 错误与扩展
 

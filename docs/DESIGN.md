@@ -1,6 +1,6 @@
 # 接口边界与测试计划
 
-使用 Java 21 + JDK HttpClient/WebSocket，单 Maven jar，坐标 io.github.user37176427:wecom-aibot-java-sdk。运行时只依赖 Jackson 2，使用 JDK 日志适配接口，不依赖 Spring 或业务系统。
+使用 Java 21 + JDK HttpClient/WebSocket，单 Maven jar，坐标 io.github.moment:wecom-aibot-java-sdk。运行时只依赖 Jackson 2，使用 JDK 日志适配接口，不依赖 Spring 或业务系统。
 
 ## 设计
 
