@@ -1,0 +1,8 @@
+WeCom AI Bot Java SDK
+Copyright (c) 2026 wecom-aibot-java-sdk contributors
+
+Protocol structures and cryptographic behavior are based on the MIT licensed
+WeComTeam/aibot-node-sdk (npm 1.0.7) and WecomTeam/wecom-aibot-python-sdk.
+Copyright (c) 2026 WeCom. The upstream license is in LICENSE-WeCom.
+The Node package declares MIT in package.json but includes no standalone LICENSE.
+This is an independent Java implementation, not an official WeCom SDK.

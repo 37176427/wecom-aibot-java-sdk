@@ -1,0 +1,17 @@
+/target/
+/.idea/
+/.vscode/
+*.iml
+*.class
+*.jar
+*.war
+*.log
+*.pem
+*.key
+*.p12
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc

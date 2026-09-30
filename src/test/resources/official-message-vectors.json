@@ -1,0 +1,142 @@
+{
+  "source": "@wecom/aibot-node-sdk@1.0.7",
+  "frames": [
+    {
+      "cmd": "aibot_respond_msg",
+      "body": {
+        "msgtype": "stream",
+        "stream": {
+          "id": "stream",
+          "finish": true,
+          "content": "final",
+          "feedback": {
+            "id": "feedback"
+          }
+        }
+      }
+    },
+    {
+      "cmd": "aibot_respond_msg",
+      "body": {
+        "msgtype": "stream_with_template_card",
+        "stream": {
+          "id": "stream",
+          "finish": true,
+          "content": "combined",
+          "msg_item": [
+            {
+              "msgtype": "image",
+              "image": {
+                "base64": "YWJj",
+                "md5": "900150983cd24fb0d6963f7d28e17f72"
+              }
+            }
+          ],
+          "feedback": {
+            "id": "stream-feedback"
+          }
+        },
+        "template_card": {
+          "card_type": "button_interaction",
+          "task_id": "task",
+          "main_title": {
+            "title": "test"
+          },
+          "button_list": [
+            {
+              "text": "yes",
+              "key": "yes"
+            }
+          ],
+          "feedback": {
+            "id": "card-feedback"
+          }
+        }
+      }
+    },
+    {
+      "cmd": "aibot_respond_welcome_msg",
+      "body": {
+        "msgtype": "text",
+        "text": {
+          "content": "welcome"
+        }
+      }
+    },
+    {
+      "cmd": "aibot_respond_update_msg",
+      "body": {
+        "response_type": "update_template_card",
+        "template_card": {
+          "card_type": "button_interaction",
+          "task_id": "task",
+          "main_title": {
+            "title": "test"
+          },
+          "button_list": [
+            {
+              "text": "yes",
+              "key": "yes"
+            }
+          ]
+        },
+        "userids": [
+          "tester"
+        ]
+      }
+    },
+    {
+      "cmd": "aibot_respond_msg",
+      "body": {
+        "msgtype": "video",
+        "video": {
+          "media_id": "media",
+          "title": "video",
+          "description": "test"
+        }
+      }
+    },
+    {
+      "cmd": "aibot_send_msg",
+      "body": {
+        "chatid": "chat",
+        "msgtype": "file",
+        "file": {
+          "media_id": "media"
+        }
+      }
+    },
+    {
+      "cmd": "aibot_send_msg",
+      "body": {
+        "chatid": "chat",
+        "msgtype": "markdown",
+        "markdown": {
+          "content": "notice"
+        }
+      }
+    },
+    {
+      "cmd": "aibot_respond_msg",
+      "body": {
+        "msgtype": "template_card",
+        "template_card": {
+          "card_type": "button_interaction",
+          "task_id": "task",
+          "main_title": {
+            "title": "test"
+          },
+          "button_list": [
+            {
+              "text": "yes",
+              "key": "yes"
+            }
+          ],
+          "feedback": {
+            "id": "feedback"
+          }
+        }
+      }
+    }
+  ]
+}

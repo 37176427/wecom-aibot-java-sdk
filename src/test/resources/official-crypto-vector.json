@@ -1,0 +1,14 @@
+{
+  "source": "@wecom/aibot-node-sdk@1.0.7",
+  "gitHead": "ea48edf7c99be0609fe9740050f4942f897a5d95",
+  "encodingKey": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+  "token": "fixture-token",
+  "receiveId": "fixture-bot",
+  "timestamp": "123",
+  "nonce": "456",
+  "text": "企业微信 SDK interoperability",
+  "encrypt": "MW7hBOIpGtOhq9sgUX6TMAF9nsQckYZ+600j0PNWpvQMigxKGbLElYfihwUMtyque3sR9ZW3MQBp5DkAfvXtMI74PZBaNFVnRtpiE+kJE6iAImtr4+UPsyPADMgMMlla",
+  "signature": "6a2bc0ef1253ba41a9e0c9dc546acdce32f4cb97",
+  "mediaPlain": "bWVkaWEg5Lit5paH",
+  "mediaEncrypted": "fO+8m3m+PcuYybByWUUMIib9p2N8QdFB1YjWneHgMKk="
+}
